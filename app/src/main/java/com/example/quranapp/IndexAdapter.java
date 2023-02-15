@@ -58,10 +58,7 @@ public class IndexAdapter extends RecyclerView.Adapter<IndexAdapter.ViewHolder> 
 //                    Toast.makeText(v.getContext(), "clicked on item", Toast.LENGTH_SHORT).show();
                     String st = (String) indexTitle.getText();
 
-                    Intent intent = new Intent(ctx.getApplicationContext(), DataShowActivity.class);
-                    intent.putExtra("data", st);
-                    intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
-                    ctx.getApplicationContext().startActivity(intent);
+
 //                    v.getContext().startActivity(intent);
                 }
             });
